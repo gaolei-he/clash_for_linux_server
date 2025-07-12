@@ -23,6 +23,8 @@ start_clash
 
 ## 细节
 
+如遇`start_clash: command not found`，可尝试执行`source ~/.bashrc`
+
 clash默认代理端口为7890，如需更改，修改`install.sh`中的所有`7890`为你需要的端口。
 
 默认情况下，安装脚本会将`clash`的配置文件和程序放在`~/.config/clash/`
