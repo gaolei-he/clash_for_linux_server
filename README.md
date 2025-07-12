@@ -2,11 +2,11 @@
 
 ## 安装
 
-'''bash
+```bash
 git clone https://github.com/gaolei-he/clash_for_linux_server.git
 cd clash_for_linux_server
 ./install.sh
-'''
+```
 
 并将你的配置文件放在`~/.config/clash/config.yaml`
 
