@@ -18,7 +18,7 @@ start_clash
 
 ## 退出
 
-1. 使用`Ctrl+D`退出终端，clash会自动退出
+1. 使用`Ctrl+D`退出终端，clash会自动退出（推荐）
 2. 使用`exit_clash`命令退出
 
 ## 细节
