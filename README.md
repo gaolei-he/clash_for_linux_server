@@ -21,14 +21,25 @@ start_clash
 1. 使用`Ctrl+D`退出终端，clash会自动退出（推荐）
 2. 使用`exit_clash`命令退出
 
-## 细节
+## 说明
+
+1. 由于订阅链接现多采用加密方式，因此你需要手动将本地解密后的订阅配置文件上传至服务器`~/.config/clash/`路径，并命名为`config.yaml`（本地的配置文件查找方式见后图，通过该方式找到文件所在路径，打开所在文件夹，上传至服务器即可，注意上传后重命名为`config.yaml`）
+
+2. 默认情况下，clash会代理7890端口，你需要确保`config.yaml`中的端口号（关键字为`mixed-prot`或`port`等）和`install.sh`中的端口号一致，如已安装，建议修改`config.yaml`中的端口号即可
+
+3. 同时，`config.yaml`中，`external-controller`选项对应的端口号，确保与上面的端口号不同即可，尽量修改为大一点（>10000）的端口
+
+4. 可通过`wget google.com`测试代理是否正常，如正常，返回码为`200`，会生成一个`index.html`文件（该文件无用，可删除）
+
+4. 注意不用时及时[关闭](#退出)，避免长期占用端口
+
+## 其他问题
 
 如遇`start_clash: command not found`，可尝试执行`source ~/.bashrc`
-
-clash默认代理端口为7890，如需更改，修改`install.sh`中的所有`7890`为你需要的端口。
 
 默认情况下，安装脚本会将`clash`的配置文件和程序放在`~/.config/clash/`
 
 输出log到`~/.config/clash/clash.log`
 
 安装后可删除该仓库。
+<img width="940" height="737" alt="image" src="https://github.com/user-attachments/assets/6410be8c-17b7-4824-af58-6c3329bfd46f" />
