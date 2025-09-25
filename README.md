@@ -25,7 +25,7 @@ start_clash
 
 1. 由于订阅链接现多采用加密方式，因此你需要手动将本地解密后的订阅配置文件上传至服务器`~/.config/clash/`路径，并命名为`config.yaml`（本地的配置文件查找方式见后图，通过该方式找到文件所在路径，打开所在文件夹，上传至服务器即可，注意上传后重命名为`config.yaml`）
 
-2. 默认情况下，clash会代理7890端口，你需要确保`config.yaml`中的端口号（关键字为`mixed-prot`或`port`等）和`install.sh`中的端口号一致，如已安装，建议修改`config.yaml`中的端口号即可
+2. 默认情况下，clash会代理7890端口，你需要确保`config.yaml`中的端口号（关键字为`mixed-prot`或`port`等）和`install.sh`中的端口号一致，建议修改为大一点（>10000）的端口，避免与其他程序冲突
 
 3. 同时，`config.yaml`中，`external-controller`选项对应的端口号，确保与上面的端口号不同即可，尽量修改为大一点（>10000）的端口
 
