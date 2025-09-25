@@ -43,6 +43,8 @@ start_clash
 
 安装后可删除该仓库。
 
+如重新安装，建议删除`.bashrc`中已添加的clash配置内容
+
 如遇问题，欢迎pr
 
 <img width="940" height="737" alt="image" src="https://github.com/user-attachments/assets/6410be8c-17b7-4824-af58-6c3329bfd46f" />

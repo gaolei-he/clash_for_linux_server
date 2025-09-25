@@ -1,7 +1,7 @@
 #!/bin/bash
 
 mkdir -p ~/.config/clash
-cp ./data/Country.mmdb ./data/cfw ~/.config/clash/
+cp ./data/cfw ./data/Country.mmdb ~/.config/clash/
 echo '
 # ==== clash config start ====
 start_clash() {
@@ -9,11 +9,11 @@ start_clash() {
     export https_proxy='http://127.0.0.1:7890'
     export HTTP_PROXY='http://127.0.0.1:7890'
     export HTTPS_PROXY='http://127.0.0.1:7890'
-    ~/.config/clash/cfw >~/.config/clash/clash.log 2>&1 &
+    ~/.config/clash/cfw -d ~/.config/clash >~/.config/clash/clash.log 2>&1 &
     echo "Clash started. Log file: ~/.config/clash/clash.log"
 
     export CLASH_PID=$!
-    trap "echo \"exit clash\"; kill -9 $CLASH_PID; exit" EXIT
+    trap "echo \"exit clash\"; kill -9 $CLASH_PID" EXIT
 }
 exit_clash() {
     if [ -n "$CLASH_PID" ]; then
