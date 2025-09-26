@@ -47,4 +47,5 @@ start_clash
 
 如遇问题，欢迎pr
 
-<img width="940" height="737" alt="image" src="https://github.com/user-attachments/assets/6410be8c-17b7-4824-af58-6c3329bfd46f" />
+<img width="940" height="737" alt="image" src="https://github.com/user-attachments/assets/9c9f3320-012a-4c23-9c23-f65ceb8dd0ce" />
+
