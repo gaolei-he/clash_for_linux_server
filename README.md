@@ -5,6 +5,7 @@
 ```bash
 git clone https://github.com/gaolei-he/clash_for_linux_server.git
 cd clash_for_linux_server
+bash #需在bash中，zsh需修改install.sh，见后文
 ./install.sh
 ```
 
@@ -27,7 +28,7 @@ start_clash
 
 2. 默认情况下，clash会代理7890端口，你需要确保`config.yaml`中的端口号（关键字为`mixed-prot`或`port`等）和`install.sh`中的端口号一致，建议修改为大一点（>10000）的端口，避免与其他程序冲突
 
-3. 同时，`config.yaml`中，`external-controller`选项对应的端口号，确保与上面的端口号不同即可，尽量修改为大一点（>10000）的端口
+3. 同时，`config.yaml`中，`external-controller`所在行行首添加#注释掉即可，减少端口占用（该端口为web面板，仅在需要安装web面板时才需要）
 
 4. 可通过`wget google.com`测试代理是否正常，如正常，返回码为`200`，会生成一个`index.html`文件（该文件无用，可删除）
 
