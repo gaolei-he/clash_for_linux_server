@@ -1,7 +1,7 @@
 #!/bin/bash
 
 mkdir -p ~/.config/clash
-cp ./data/cfw ./data/Country.mmdb ~/.config/clash/
+cp ./data/cfw ./data/Country.mmdb ./data/GeoSite.dat ~/.config/clash/
 echo '
 # ==== clash config start ====
 start_clash() {
