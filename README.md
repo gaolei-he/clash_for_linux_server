@@ -36,6 +36,8 @@ start_clash
 
 6. 该程序兼容bash，如使用zsh，需将install.sh中的trap行命令删除，同时退出clash仅支持exit_clash命令
 
+7. 关于web面板的使用：如果要使用web面板选择节点等操作，不要删除`3`中的`external-controller`选项，在启动clash后，将其端口通过vscode转发到本地，然后在[这里](yacd.haishan.me)在本地连接到该端口进行控制
+
 ## 其他问题
 
 如遇`start_clash: command not found`，可尝试执行`source ~/.bashrc`
