@@ -1,5 +1,7 @@
 # linux上使用clash
 
+>[另一个简单的使用方法](another.md)
+
 ## 安装
 
 ```bash
